@@ -39,8 +39,8 @@ program
     .description('react create component from the CLI')
 
 program
-    .command('add')
-    .alias('a')
+    .command('component')
+    .alias('c')
     .description(' Add a new react component')
     .action(() => {
         prompt(questions).then(responses =>

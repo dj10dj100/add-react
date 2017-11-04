@@ -1,7 +1,7 @@
 {
-  "name": "rcc",
+  "name": "add-react",
   "version": "0.0.1",
-  "description": "RCC - react create component from the CLI",
+  "description": "Add react - add react create components from the CLI",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -13,6 +13,7 @@
     "url": "git+https://github.com/dj10dj100/rcc-react-create-component-cli.git"
   },
   "keywords": [
+    "add",
     "react",
     "create",
     "component",
