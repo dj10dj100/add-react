@@ -1,7 +1,7 @@
 {
   "name": "add-react",
   "version": "1.0.2",
-  "description": "Add react - add react create components from the CLI",
+  "description": "Add react allows you to create react stateless & class components from the CLI",
   "main": "index.js",
   "scripts": {
     "test": "test"
