@@ -1,14 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander');
 const { prompt } = require('inquirer');
-const { statelessComponent, classComponent } = require('./app/add-component');
-
-
-const newComponent = {
-    'stateless': statelessComponent,
-    'class': classComponent
-}
-
+const { component } = require('./app/add-component');
 
 const questions = [
     {
@@ -22,9 +15,15 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'componentName',
+        default: 'Index',
+        message: 'Component name (default Index)'
+    },
+    {
+        type: 'input',
         name: 'filename',
-        default: 'index.jsx',
-        message: 'File name (default ./index.jsx)'
+        default: answers => `${answers.componentName}.jsx`,
+        message: answers => `File name (default ./${answers.componentName}.jsx)`
     },
     {
         type: 'confirm',
@@ -35,7 +34,7 @@ const questions = [
 ];
 
 program
-    .version('0.0.1')
+    .version('1.0.0')
     .description('react create component from the CLI')
 
 program
@@ -43,13 +42,11 @@ program
     .alias('c')
     .description(' Add a new react component')
     .action(() => {
-        prompt(questions).then(responses =>
-            newComponent[responses.componentType](responses)
-        )
+        prompt(questions).then(responses => component(responses))
     })
 
 
-if (!process.argv.slice(2).length || !/[arudl]/.test(process.argv.slice(2))) {
+if (!process.argv.slice(2).length || !/[c]/.test(process.argv.slice(2))) {
     program.outputHelp();
     process.exit();
 }

@@ -1,20 +1,33 @@
-const statelessComponent = answers => {
+const fs = require('fs');
+
+const {
+    statelessComponent,
+    classComponent
+} = require('./templates');
+
+const component = answers => {
 
     const {
-
+        filename,
+        componentType
     } = answers;
 
+    const newComponent = {
+        'stateless': statelessComponent,
+        'class': classComponent
+    }
 
+    fs.writeFile(filename,
+        newComponent[componentType](answers),
+        err => {
+            if (err) {
+                return console.error(`Failed to save ${answers.filename}: ${err.message}.`);
+            }
+            console.log(`Success ${answers.filename} saved`);
+        });
 
-};
-
-const classComponent = answers => {
-    const {
-        
-    } = answers;
 };
 
 module.exports = {
-    classComponent,
-    statelessComponent
+    component
 };
