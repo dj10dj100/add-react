@@ -1,0 +1,30 @@
+{
+  "name": "rcc",
+  "version": "0.0.1",
+  "description": "RCC - react create component from the CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj10dj100/rcc-react-create-component-cli.git"
+  },
+  "keywords": [
+    "react",
+    "create",
+    "component",
+    "cli",
+    "command",
+    "line",
+    "interface",
+    "node",
+    "tool"
+  ],
+  "author": "dj10dj100",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dj10dj100/rcc-react-create-component-cli/issues"
+  },
+  "homepage": "https://github.com/dj10dj100/rcc-react-create-component-cli#readme"
+}
