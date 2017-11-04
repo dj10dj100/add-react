@@ -12,7 +12,7 @@
 Add as a global
 `yarn add add-react -g` or `npm install add-react -g`
 
-or 
+or to add to current project only
 
 `yarn add add-react`
 
@@ -21,7 +21,12 @@ To use:
 ### Commands
 `component | c` - add a new react component, this will walk you through a few steps to create the component
 example:
-`add-react component` || `add-react c`
+
+`add-react component` 
+
+or 
+
+`add-react c`
 
 ### Options:
 
