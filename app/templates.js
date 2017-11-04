@@ -54,9 +54,7 @@ const lifecycles = `
 
 
 const classComponent = answers => {
-    console.log(answers.lifecycleMethods);
     let lifecycleMethods = answers.lifecycleMethods ? lifecycles : '';
-
     return `
 ${react}
 

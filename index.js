@@ -43,13 +43,21 @@ program
     .description(' Add a new react component')
     .action(() => {
         prompt(questions).then(responses => component(responses))
-    })
+    });
 
 
-if (!process.argv.slice(2).length || !/[c]/.test(process.argv.slice(2))) {
-    program.outputHelp();
-    process.exit();
-}
-
+program
+    .command('cli <componentType> <componentName> <filename> [lifecycle]')
+    .alias('cl')
+    .description('1 liner to add a component without the question steps')
+    .action((componentType, componentName, filename, lifecycle) => {
+        const values = {
+            componentType,
+            componentName,
+            filename,
+            lifecycleMethods: lifecycle
+        }
+        component(values);
+    });
 
 program.parse(process.argv);
