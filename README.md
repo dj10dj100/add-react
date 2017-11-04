@@ -97,11 +97,15 @@ module.exports = Navigation;
 ### CLI only
 
 If you prefer to just use a one liner and not go through the questions you can use the following:
+
 `add-react cli <componentType> <componentName> <filename> [lifecycle]`
 
 `componentType` : 'class' or 'stateless'
+
 `componentName` : <ComponentName>
+
 `filename` : filename - e.g Component.jxs
+
 `lifecycle`: boolean - whether class (stateful) component should contain all lifecycle methods
 
 
