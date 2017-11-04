@@ -1,7 +1,9 @@
-# Add React component from cli
-* add-react create react components from the CLI
-* Only supports JSX flavoured components
-* Can make class or stateless component
+[![npm](https://img.shields.io/npm/dm/add-react.svg)]()
+[![npm](https://img.shields.io/npm/dt/add-react.svg)]()
+[![npm](https://img.shields.io/npm/v/add-react.svg)]()
+# Add React components from cli
+* Supports JSX flavoured components
+* Can make class (stateful) or stateless component
 * Uses UMD (universal module syntax) for wider support
 
   Commands:
