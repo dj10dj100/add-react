@@ -1,6 +1,6 @@
 {
   "name": "add-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add react - add react create components from the CLI",
   "main": "index.js",
   "scripts": {
