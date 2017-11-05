@@ -27,6 +27,11 @@ const questions = [
     },
     {
         type: 'confirm',
+        name: 'es6',
+        message: 'Use es6 exports default?'
+    },
+    {
+        type: 'confirm',
         name: 'lifecycleMethods',
         when: answers => answers.componentType === 'class',
         message: 'Add lifecycle methods?'

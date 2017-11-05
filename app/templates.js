@@ -1,25 +1,31 @@
 
 
 
+const whichModule = es6 => es6 ? 'exports default ' : 'module.exports =';
 
 const react = `
 const React = require('react');
-`
+`;
 
 /**
  * 
  * @param {*} answers 
  */
-const statelessComponent = answers => `
+const statelessComponent = ({
+    componentName,
+    es6
+}) =>
+    `
 ${react}
-const ${answers.componentName} = () => {
+const ${componentName} = () => {
     return (
         <div>
         </div>
     )
 };
-module.exports = ${answers.componentName};
+${whichModule(es6)} ${componentName};
 `;
+
 
 const lifecycles = `
     componentWillMount() {
@@ -49,21 +55,25 @@ const lifecycles = `
     componentWillUnmount() {
 
     }
-`
+`;
 
+const classComponent = ({
+    componentName,
+    lifecycleMethods,
+    es6
+}) => {
 
+    let includeLifycycleMethods = lifecycleMethods ? lifecycles : '';
 
-const classComponent = answers => {
-    let lifecycleMethods = answers.lifecycleMethods ? lifecycles : '';
     return `
 ${react}
 
-class ${answers.componentName} extends React.Component {
+class ${componentName} extends React.Component {
     constructor(props) {
         super(props);
         this.state = {}
     }
-    ${lifecycleMethods}    
+    ${includeLifycycleMethods}    
     render() {
         return (
             <div>
@@ -72,7 +82,7 @@ class ${answers.componentName} extends React.Component {
     }
 }
 
-module.exports = ${answers.componentName};
+${whichModule(es6)} ${componentName};
 `;
 }
 
