@@ -10,7 +10,7 @@
   "bin": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dj10dj100/rcc-react-create-component-cli.git"
+    "url": "git+https://github.com/dj10dj100/add-react.git"
   },
   "keywords": [
     "add",
@@ -27,9 +27,9 @@
   "author": "dj10dj100",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dj10dj100/rcc-react-create-component-cli/issues"
+    "url": "https://github.com/dj10dj100/add-react/issues"
   },
-  "homepage": "https://github.com/dj10dj100/rcc-react-create-component-cli#readme",
+  "homepage": "https://github.com/dj10dj100/add-react#readme",
   "dependencies": {
     "add-react": "^1.0.1",
     "commander": "^2.11.0",
