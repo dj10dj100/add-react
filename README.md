@@ -1,4 +1,4 @@
- gip[![npm](https://img.shields.io/npm/dm/add-react.svg)]()
+[![npm](https://img.shields.io/npm/dm/add-react.svg)]()
 [![npm](https://img.shields.io/npm/dt/add-react.svg)]()
 [![npm](https://img.shields.io/npm/v/add-react.svg)]()
 
