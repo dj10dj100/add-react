@@ -1,14 +1,11 @@
-
-
-
-
 const react = `
 const React = require('react');
 `
 
 /**
- * 
+ * @name statelessComponent 
  * @param {*} answers 
+ * @return {string} 
  */
 const statelessComponent = answers => `
 ${react}
@@ -49,7 +46,7 @@ const lifecycles = `
     componentWillUnmount() {
 
     }
-`
+`;
 
 
 

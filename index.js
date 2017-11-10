@@ -3,6 +3,11 @@ const program = require('commander');
 const { prompt } = require('inquirer');
 const { component } = require('./app/add-component');
 
+/**
+ * @name Questions 
+ * @typedef {object} 
+ * @description
+ */
 const questions = [
     {
         type: 'list',

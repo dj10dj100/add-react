@@ -19,12 +19,11 @@ const component = answers => {
 
     fs.writeFile(filename,
         newComponent[componentType](answers),
-        err => {
-            if (err) {
-                return console.error(`Failed to save ${answers.filename}: ${err.message}.`);
-            }
-            console.log(`Success ${answers.filename} saved`);
-        });
+        err => err ?
+            console.error(`Failed to save ${answers.filename}: ${err.message}.`)
+            :
+            console.log(`Success ${answers.filename} saved`)
+    );
 
 };
 

@@ -1,6 +1,11 @@
-[![npm](https://img.shields.io/npm/dm/add-react.svg)]()
+ gip[![npm](https://img.shields.io/npm/dm/add-react.svg)]()
 [![npm](https://img.shields.io/npm/dt/add-react.svg)]()
 [![npm](https://img.shields.io/npm/v/add-react.svg)]()
+
+![alt Preview of package actions][Preview]
+
+[Preview]: how-to.gif "Preview of package actions"
+
 # Add React components from cli
 * Supports JSX flavoured components
 * Can make class (stateful) or stateless component
