@@ -4,7 +4,7 @@
 
 ![alt Preview of package actions][Preview]
 
-[Preview]: how-to.gif "Preview of package actions"
+[Preview]: https://github.com/dj10dj100/add-react/blob/master/how-to.gif "Preview of package actions"
 
 # Add React components from cli
 * Supports JSX flavoured components
