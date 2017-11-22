@@ -132,19 +132,19 @@ componentType
 
 *Class* or *Stateless*
 
-```
+```javascript
 componentName
 ```
 
 <ComponentName>
 
-```
+```javascript
 filename
 ``` 
 
 filename - e.g Component.jsx
 
-```
+```javascript
 lifecycle
 ```
 
