@@ -129,19 +129,25 @@ add-react cli <componentType> <componentName> <filename> [lifecycle]
 ```
 componentType
 ``` 
+
 *Class* or *Stateless*
 
 ```
 componentName
 ```
+
 <ComponentName>
+
 ```
 filename
 ``` 
+
 filename - e.g Component.jsx
+
 ```
 lifecycle
 ```
+
 *boolean* - whether class (stateful) component should contain all lifecycle methods
 
 
