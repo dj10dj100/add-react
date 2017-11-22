@@ -136,7 +136,7 @@ componentType
 componentName
 ```
 
-<ComponentName>
+Component Name
 
 ```javascript
 filename
