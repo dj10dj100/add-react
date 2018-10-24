@@ -4,12 +4,19 @@ const React = require('react');
 
 
 class TestComponent extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {}
     }
+
     
-    componentWillMount() {
+
+    static getDerivedStateFromProps(props, state){
+        return {};
+    }
+
+    UNSAFE_componentWillMount() {
         
     }
 
@@ -17,7 +24,7 @@ class TestComponent extends React.Component {
 
     }
 
-    componentWillReceiveProps() {
+    UNSAFE_componentWillReceiveProps() {
 
     }
 
@@ -25,7 +32,7 @@ class TestComponent extends React.Component {
 
     }
 
-    componentWillUpdate() {
+    UNSAFE_componentWillUpdate() {
 
     }
 
@@ -37,12 +44,14 @@ class TestComponent extends React.Component {
 
     }
     
+
     render() {
         return (
             <div>
             </div>
         );
     }
-}
+
+};
 
 module.exports = TestComponent;
